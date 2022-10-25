@@ -1,0 +1,10 @@
+<%= link_to "Add a new todo", new_todo_path %>
+
+
+<h2>Todos List</h2>
+
+<ul class="todos">
+  <% @todos.each do |todo| %>
+    <li><%= link_to todo.title, todo %></li>
+  <% end %>
+</ul>
